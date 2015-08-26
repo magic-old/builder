@@ -1,10 +1,8 @@
 export function compress(g, conf, p) {
-  const {out} = conf.dirs;
+  const {dirs, files} = conf;
 
   const src = [
-    p.join(out, 'index.html'),
-    p.join(out, 'manifest.appcache'),
-    p.join(out, 'favicon.gif'),
+    p.join(dirs.out, '**', files.compress),
   ];
 
   return () => g.src(src)
@@ -15,6 +13,6 @@ export function compress(g, conf, p) {
                   },
                 }))
                 .on('error', p.util.log)
-                .pipe(g.dest(out))
+                .pipe(g.dest(dirs.out))
                 .pipe(p.livereload());
 }
