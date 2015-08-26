@@ -44,13 +44,6 @@
   "bugs": {
     "url": "https://github.com/magicshifter/magicbuilder/issues"
   },
-  "contributors": [
-    {
-      "name": "jascha ehrenreich",
-      "email": "jascha@magicshifter.net",
-      "github": "jaeh"
-    }
-  ],
   "dependencies": {
     "babelify": "^6.2.0",
     "browserify": "^11.0.1",
