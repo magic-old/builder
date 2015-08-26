@@ -1,3 +1,7 @@
 node_modules
 npm-debug.log
-
+gulp
+!gulpfile.js
+magicbuilder.js
+!src/magicbuilder.js
+!src/gulp
