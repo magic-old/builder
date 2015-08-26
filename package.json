@@ -4,7 +4,7 @@
   "description": "Magically builds static webpages",
   "private": true,
   "author": "Metalab",
-  "license": "AGPL-3.0"
+  "license": "AGPL-3.0",
   "scripts": {
     "start": "gulp watch",
     "postinstall": "gulp"
