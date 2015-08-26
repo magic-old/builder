@@ -26,7 +26,7 @@ export default function gulpTasks(gulp, config) {
   // lint css using stylint
   gulp.task('lint:css', tasks.stylint);
   // stylus to css
-  gulp.task('build:css', ['colorcycle'], tasks.css);
+  gulp.task('build:css', tasks.css);
 
   // lint javascript using jscs
   gulp.task('lint:js', tasks.lint);
@@ -46,8 +46,6 @@ export default function gulpTasks(gulp, config) {
   gulp.task('server', tasks.server);
 
   gulp.task('watch', ['build', 'compress', 'server'], tasks.watch);
-
-  gulp.task('colorcycle', tasks.colorcycle);
 
   return gulp;
 }
