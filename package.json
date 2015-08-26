@@ -1,0 +1,85 @@
+{
+  "name": "magicbuilder",
+  "version": "0.0.1",
+  "description": "Magically builds static webpages",
+  "private": true,
+  "author": "Metalab",
+  "license": "AGPL-3.0"
+  "scripts": {
+    "start": "gulp watch",
+    "postinstall": "gulp"
+  },
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "email": "jascha@magicshifter.net",
+      "github": "jaeh"
+    },
+    {
+      "name": "phileas lebada",
+      "github": "norpol"
+    },
+    {
+      "name": "philipp tiefenbacher",
+      "email": "wizard23@magicshifter.net",
+      "github": "wizard23"
+    },
+    {
+      "name": "tom peak",
+      "github": "tompeak"
+    }
+  ],
+  "main": "magicbuilder.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/magicshifter/magicbuilder"
+  },
+  "keywords": [
+    "magicshifter",
+    "metalab",
+    "static",
+    "pages",
+    "builder"
+  ],
+  "bugs": {
+    "url": "https://github.com/magicshifter/magicbuilder/issues"
+  },
+  "contributors": [
+    {
+      "name": "jascha ehrenreich",
+      "email": "jascha@magicshifter.net",
+      "github": "jaeh"
+    }
+  ],
+  "dependencies": {
+    "babelify": "^6.2.0",
+    "browserify": "^11.0.1",
+    "del": "^1.2.1",
+    "fs-extra": "^0.23.1",
+    "gulp": "^3.9.0",
+    "gulp-babel": "^5.2.1",
+    "gulp-copy": "0.0.2",
+    "gulp-gzip": "^1.2.0",
+    "gulp-ignore": "^1.2.1",
+    "gulp-inject-string": "0.0.2",
+    "gulp-jade": "^1.1.0",
+    "gulp-jscs": "^2.0.0",
+    "gulp-jscs-stylish": "^1.1.2",
+    "gulp-livereload": "^3.8.0",
+    "gulp-replace": "^0.5.4",
+    "gulp-stylint": "^2.0.0",
+    "gulp-stylus": "^2.0.6",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "gutil": "^1.6.4",
+    "jade": "^1.11.0",
+    "jscs": "^2.1.0",
+    "nib": "^1.1.0",
+    "sc-color": "^0.4.0",
+    "st": "^0.5.5",
+    "stylint": "^1.2.2",
+    "stylint-stylish": "^1.2.0",
+    "stylus": "^0.52.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
