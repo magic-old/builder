@@ -63,6 +63,7 @@
     "gutil": "^1.6.4",
     "jade": "^1.11.0",
     "jscs": "^2.1.0",
+    "magicserver": "magicshifter/magicserver",
     "nib": "^1.1.0",
     "sc-color": "^0.4.0",
     "st": "^0.5.5",
