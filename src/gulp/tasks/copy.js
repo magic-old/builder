@@ -1,8 +1,8 @@
 export function copy(g, conf, p) {
-  const {dirs} = conf;
+  const {dirs, files} = conf;
 
   const src = [
-    p.join(dirs.src, dirs.assets, '**', '*'),
+    p.join(dirs.src, dirs.assets, '**', files.copy),
   ];
 
   return (cb) => g.src(src)
