@@ -1,7 +1,9 @@
 export function css(g, conf, p) {
   const {dirs, files} = conf;
-  const src = p.join(dirs.src, dirs.css, files.css);
-  const out = p.join(dirs.out, dirs.css);
+
+  const src = p.join(dirs.src, '**', dirs.css, 'main.styl');
+
+  const out = p.join(dirs.out);
 
   return (cb) => g.src(src)
                   .pipe(p.stylus({
