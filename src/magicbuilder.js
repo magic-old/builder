@@ -15,7 +15,7 @@ export default function gulpTasks(gulp, config) {
   ]);
 
   // lint, build then watch
-  gulp.task('default', ['lint', 'build', 'watch']);
+  gulp.task('default', ['lint', 'build', 'watch', 'server']);
 
   // lint css, jade and js
   gulp.task('lint', ['lint:css', 'lint:js']);
@@ -43,9 +43,9 @@ export default function gulpTasks(gulp, config) {
   gulp.task('build:clean', tasks.clean);
   gulp.task('clean', ['build:clean']);
 
-  gulp.task('server', tasks.server);
+  gulp.task('server', ['build', 'compress'], tasks.server);
 
-  gulp.task('watch', ['build', 'compress', 'server'], tasks.watch);
+  gulp.task('watch', ['build', 'compress'], tasks.watch);
 
   return gulp;
 }
