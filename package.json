@@ -28,7 +28,7 @@
   "main": "magicbuilder.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/magicshifter/magicbuilder"
+    "url": "https://github.com/magic/builder"
   },
   "keywords": [
     "magicshifter",
@@ -38,7 +38,7 @@
     "builder"
   ],
   "bugs": {
-    "url": "https://github.com/magicshifter/magicbuilder/issues"
+    "url": "https://github.com/magic/builder/issues"
   },
   "dependencies": {
     "babelify": "^6.2.0",
@@ -63,7 +63,7 @@
     "gutil": "^1.6.4",
     "jade": "^1.11.0",
     "jscs": "^2.1.0",
-    "magicserver": "magicshifter/magicserver",
+    "magicserver": "magic/server",
     "nib": "^1.1.0",
     "sc-color": "^0.4.0",
     "st": "^0.5.5",
