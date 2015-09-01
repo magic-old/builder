@@ -1,9 +1,9 @@
 {
-  "name": "magicbuilder",
+  "name": "builder",
   "version": "0.0.1",
   "description": "Magically builds static webpages",
   "private": true,
-  "author": "Metalab",
+  "author": "Wizards@Work",
   "license": "AGPL-3.0",
   "scripts": {
     "start": "gulp watch",
@@ -25,7 +25,7 @@
       "github": "tompeak"
     }
   ],
-  "main": "magicbuilder.js",
+  "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/magic/builder"
@@ -63,7 +63,7 @@
     "gutil": "^1.6.4",
     "jade": "^1.11.0",
     "jscs": "^2.1.0",
-    "magicserver": "magic/server",
+    "server": "magic/server",
     "nib": "^1.1.0",
     "sc-color": "^0.4.0",
     "st": "^0.5.5",

@@ -9,7 +9,7 @@ var watch = require('gulp-watch');
 gulp.task('clean', function(cb) {
   var dist = [
     'gulp',
-    'magicbuilder.js',
+    'index.js',
   ];
   del(dist, cb);
 });
