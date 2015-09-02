@@ -15,6 +15,5 @@ export function lint(g, conf, p) {
                   // Suppress errors to pass them downwards
                   .on('error', () => { null; })
 
-                  .pipe(p.jscsStylish())
-                  .pipe(p.livereload());
+                  .pipe(p.jscsStylish());
 }

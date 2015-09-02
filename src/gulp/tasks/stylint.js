@@ -5,6 +5,5 @@ export function stylint(g, conf, p) {
   const config = p.join(dirs.config, stylintrc);
 
   return () => g.src(srcFiles)
-                .pipe(p.stylint({config}))
-                .pipe(p.livereload());
+                .pipe(p.stylint({config}));
 }
