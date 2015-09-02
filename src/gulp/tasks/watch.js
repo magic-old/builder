@@ -1,7 +1,7 @@
 export function watch(g, conf, p) {
   const {port} = conf;
   const {js, css, html, pages, assets, v1} = conf.dirs;
-  const {config, src, appcache, tasks} = conf.watch;
+  const {src, appcache, tasks} = conf.watch;
 
   const basePath = '/';
   const host = 'localhost';
