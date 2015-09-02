@@ -14,7 +14,7 @@ export function server(g, conf, p) {
       createServer(mount)
         .listen(conf.port, done);
     } else {
-      require('magicserver');
+      require('server');
     }
   }
 }
