@@ -5,6 +5,11 @@ export function compress(g, conf, p) {
     p.join(dirs.out, '**', files.compress),
   ];
 
+  if (conf.env === 'development') {
+    // Bail early
+    return () => (done) => done();
+  }
+
   return () => g.src(src)
                 .pipe(p.gzip({
                   gzipOptions: {
