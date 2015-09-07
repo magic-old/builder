@@ -4,6 +4,10 @@ export function js(g, conf, p) {
   const {babelrc} = conf.config;
   const rc = p.join(dirs.config, babelrc);
 
+  if (!files.js) {
+    return done => done();
+  }
+
   return () => Object.keys(files.js).map(name => {
     const dir = files.js[name];
 
