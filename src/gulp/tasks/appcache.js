@@ -1,5 +1,7 @@
 export function appcache(g, conf, p) {
   const {dirs, watch} = conf;
+  if (!watch.appcache) { return cb => cb(); }
+
   const src = p.join(dirs.src, watch.appcache);
 
   return () => {

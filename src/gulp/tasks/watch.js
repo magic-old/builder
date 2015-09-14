@@ -1,4 +1,6 @@
 export function watch(g, conf, p) {
+  if (!conf.watch) { return cb => cb(); }
+
   const {port} = conf;
   const {js, css, html, pages, assets, v1} = conf.dirs;
   const {src, appcache, tasks} = conf.watch;

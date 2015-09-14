@@ -1,14 +1,10 @@
 export function compress(g, conf, p) {
-  const {dirs, files} = conf;
-
+  const {dirs, env, files} = conf;
   const src = [
     p.join(dirs.out, '**', files.compress),
   ];
 
-  if (conf.env === 'development') {
-    // Bail early
-    return () => (done) => done();
-  }
+  if (env === 'development') { return cb => cb(); }
 
   return () => g.src(src)
                 .pipe(p.gzip({

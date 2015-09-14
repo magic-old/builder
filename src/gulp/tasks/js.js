@@ -1,12 +1,9 @@
 export function js(g, conf, p) {
-  const {dirs, files} = conf;
-
-  const {babelrc} = conf.config;
+  const {dirs, files, config} = conf;
+  const {babelrc} = config;
   const rc = p.join(dirs.config, babelrc);
 
-  if (!files.js) {
-    return done => done();
-  }
+  if (!files.js) { return cb => cb(); }
 
   return () => Object.keys(files.js).map(name => {
     const dir = files.js[name];

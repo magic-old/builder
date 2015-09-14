@@ -1,5 +1,6 @@
 export function html(g, conf, p) {
   const {dirs, server, files, locals} = conf;
+  if (!files.html) { return cb => cb(); }
 
   const {env, socialAccounts, menuItems, jadeDirs} = conf;
 

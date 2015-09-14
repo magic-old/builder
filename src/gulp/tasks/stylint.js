@@ -1,4 +1,6 @@
 export function stylint(g, conf, p) {
+  if (!conf || !conf.dirs || !conf.config || !conf.config.stylintrc) { return cb => cb(); }
+
   const {dirs} = conf;
   const {stylintrc} = conf.config;
   const srcFiles = p.join(dirs.src, dirs.css, 'main.styl');
