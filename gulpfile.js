@@ -11,7 +11,7 @@ gulp.task('clean', function(cb) {
     'gulp',
     'index.js',
   ];
-  del(dist, cb);
+  del(dist).then(function() { cb(); });
 });
 
 gulp.task('build', ['clean'], function () {

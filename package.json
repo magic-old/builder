@@ -43,8 +43,8 @@
   "dependencies": {
     "babelify": "^6.2.0",
     "browserify": "^11.0.1",
-    "del": "^1.2.1",
-    "fs-extra": "^0.23.1",
+    "del": "^2.0.2",
+    "fs-extra": "^0.24.0",
     "gulp": "^3.9.0",
     "gulp-babel": "^5.2.1",
     "gulp-copy": "0.0.2",
